@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="index.css">
+  <title>Anthony's Bio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- ===== Navbar ===== -->
+  <nav>
+    <div class="logo">MySite</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#project">Project</a></li>
+    </ul>
+      <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="darkToggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ===== Bio Section ===== -->
+  <section id="home" class="section">
+    <h1>Hi, I'm Anthony!</h1>
+    <img src="https://via.placeholder.com/150" alt="Profile Photo">
+    <p>I’m learning how to build websites using HTML, CSS, and JavaScript. I love creativity, design, and tech!</p>
+
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Gaming</li>
+      <li>Reading</li>
+    </ul>
+
+    <h2>Socials</h2>
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form>
+      <form
+  action="https://formspree.io/f/mnnvgogp"
+  method="POST"
+>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+
+
+  <!-- Dark Mode Toggle -->
+<div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" id="darkToggle">
+    <span class="slider round"></span>
+  </label>
+</div>
+
+  
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('show');
+  });
+
+  // Dark mode toggle
+  const toggle = document.getElementById('darkToggle');
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m passionate about building websites and constantly learning new things in tech!</p>
+  </section>
+
+    <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects <i class="fas fa-laptop-code"></i></h2>
+    <ul>
+      <li>🌐 Personal Bio Website</li>
+      <li>📝 To-Do List App</li>
+      <li>🎲 Dice Game (JavaScript)</li>
+    </ul>
+  </section>
+
+    <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills <i class="fas fa-tools"></i></h2>
+    <p>HTML <i class="fab fa-html5"></i> | CSS <i class="fab fa-css3-alt"></i> | JavaScript <i class="fab fa-js-square"></i></p>
+  </section>
+  
+  <!-- Script -->
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+  <section id="projects" class="section">
+  <h2>Projects <i class="fas fa-laptop-code"></i></h2>
+  <div class="project-grid">
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/300x150" alt="Project 1">
+      <h3>To-Do App</h3>
+      <p>A task manager built with JavaScript.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://via.placeholder.com/300x150" alt="Project 2">
+      <h3>Dice Game</h3>
+      <p>Play and roll using JavaScript!</p>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+</section>
+
+       
+
+       <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- Loading Spinner -->
+  <div id="loader"></div>
+
+  <!-- Typing Effect -->
+  <div id="typing"></div>
+
+    <!-- JS Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
